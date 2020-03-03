@@ -22,7 +22,7 @@ Image stored in GIT Packages : https://github.com/Nagachakith/chakith1/packages
  Image will be updated on each commit and new image should be created on bumping POM.XML version (didn't test latter scenario)
  
  Note : i have picked the spring boot sample from online and edited according due to some technical constraints.
-         Imported through URL
+         Imported through URL not able to do from machine. 
 
 
 
