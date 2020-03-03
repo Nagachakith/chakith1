@@ -55,6 +55,11 @@ public class UserController {
     return userRepository.findAll();
   }
 
+   @GetMapping(path = "/health")
+    public ResponseEntity<String> healthCheck(){
+        return new ResponseEntity("I am healthy", HttpStatus.OK);
+    }
+  
   /**
    * Gets users by id.
    *
@@ -71,7 +76,7 @@ public class UserController {
             .orElseThrow(() -> new ResourceNotFoundException("User not found on :: " + userId));
     return ResponseEntity.ok().body(user);
   }
-
+ 
   /**
    * Create user user.
    *
