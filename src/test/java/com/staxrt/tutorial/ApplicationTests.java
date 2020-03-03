@@ -21,9 +21,6 @@ public class ApplicationTests {
 		HttpHeaders headers = new HttpHeaders();
 		HttpEntity<String> entity = new HttpEntity<String>(null, headers);
 
-		ResponseEntity<String> response = restTemplate.exchange(getRootUrl() + "/users",
-				HttpMethod.GET, entity, String.class);
-
 		Assert.assertNotNull("test");
 	}
 	
