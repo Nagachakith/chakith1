@@ -16,6 +16,15 @@ import org.springframework.web.client.HttpClientErrorException;
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class ApplicationTests {
 
+@Test
+	public void testGetAllUsers() {
+		HttpHeaders headers = new HttpHeaders();
+		HttpEntity<String> entity = new HttpEntity<String>(null, headers);
 
+		ResponseEntity<String> response = restTemplate.exchange(getRootUrl() + "/users",
+				HttpMethod.GET, entity, String.class);
+
+		Assert.assertNotNull("test");
+	}
 	
 }
