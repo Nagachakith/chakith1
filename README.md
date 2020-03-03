@@ -1,7 +1,7 @@
 
 
 
-# Sample REST CRUD API with Spring Boot
+#REST  API with Spring Boot
 
 The app will start running at <http://localhost:8080>.
 
@@ -15,7 +15,7 @@ Git Action : https://github.com/Nagachakith/chakith1/actions/runs/48964416
 Git Action workflow code : https://github.com/Nagachakith/chakith1/blob/master/.github/workflows/dockerpush.yml
 
 Image stored in GIT Packages : https://github.com/Nagachakith/chakith1/packages  
-
+                               https://github.com/Nagachakith/chakith1/packages/143328
 
 
 
