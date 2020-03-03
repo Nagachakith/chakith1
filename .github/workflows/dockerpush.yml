@@ -25,8 +25,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Creating a maven build
-        uses: Nagachakith/chakith1/Dockerfile
+      - name: Build with Maven
+        run:  mvn clean package --file pom.xml
       - name: Run tests
         run: |
           if [ -f docker-compose.test.yml ]; then
