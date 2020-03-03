@@ -57,7 +57,7 @@ public class UserController {
 
    @GetMapping(path = "/health")
     public ResponseEntity<String> healthCheck(){
-        return new ResponseEntity("I am healthy", HttpStatus.OK);
+        return ResponseEntity.ok("I am healthy");
     }
   
   /**
